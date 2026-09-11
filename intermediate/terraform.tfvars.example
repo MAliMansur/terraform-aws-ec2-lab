@@ -1,0 +1,18 @@
+aws_region         = "us-east-1"
+project_name       = "terraform-ec2"
+environment        = "dev"
+instance_type      = "t3.micro"
+vpc_cidr           = "10.0.0.0/16"
+public_subnet_cidr = "10.0.1.0/24"
+http_allowed_cidr  = "0.0.0.0/0"
+root_volume_size   = 12
+
+# SSM terminal access is enabled through the IAM role, so SSH is off by default.
+enable_ssh       = false
+key_name         = null
+ssh_allowed_cidr = null
+
+extra_tags = {
+  Owner   = "Ali-Mansur"
+  Purpose = "Terraform-learning"
+}

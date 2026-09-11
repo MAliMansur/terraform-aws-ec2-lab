@@ -1,0 +1,31 @@
+# Terraform working directories
+**/.terraform/*
+
+# Terraform state may contain sensitive values
+*.tfstate
+*.tfstate.*
+
+# Plans and crash logs
+*.tfplan
+crash.log
+crash.*.log
+
+# Local variable files
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Keys must never be committed
+*.pem
+*.key
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
